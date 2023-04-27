@@ -7,12 +7,9 @@
 // WHEN I open the `logo.svg` file in a browser
 // THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
-const shapes = require("./lib/shapes.js")
+const shapes = require("./lib/shapes")
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { resolve } = require("path");
-
-
 
 // Array of prompts for the logo generator
 const questions = [
@@ -48,9 +45,7 @@ function init() {
             if (response.text.length > 3 || response.text.length < 0) {
                 throw new Error("Logo Text Must Be Between 1 and 3 Characters")
             }
-            else {
-                console.log("yo")
-            }
+            shapes.makeLogo(response.text, response.textColor, response.shape, response.logoColor)
         })
         .catch(err => console.log(err));
 }
