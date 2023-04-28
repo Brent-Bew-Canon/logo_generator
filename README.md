@@ -8,6 +8,7 @@
 4. [Usage](#usage)
 5. [Contributing](#contributing)
 6. [Testing Instructions](#testing-instructions)
+6. [Video Walkthrough](#video-walkthrough)
 
 ## Description
 This command line tool generates a simple svg logo with up to 3 characters of text.
@@ -28,3 +29,6 @@ N/A
 
 ## Tests
 Testing is done via Jest. Install Jest, then run the command "jest" to run all three tests.
+
+## Video Walkthrough
+https://youtu.be/uVnyurJJxrs
