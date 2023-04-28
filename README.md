@@ -31,4 +31,4 @@ N/A
 Testing is done via Jest. Install Jest, then run the command "jest" to run all three tests.
 
 ## Video Walkthrough
-https://youtu.be/uVnyurJJxrs
+https://youtu.be/JRM4oag2g0s
