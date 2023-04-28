@@ -1,10 +1,4 @@
-// AS a freelance web developer
-// I WANT to generate a simple logo for my projects
-// SO THAT I don't have to pay a graphic designer
 
-// THEN an SVG file is created named `logo.svg`
-// AND the output text "Generated logo.svg" is printed in the command line
-// WHEN I open the `logo.svg` file in a browser
 // THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 const shapes = require("./lib/shapes")
@@ -25,7 +19,7 @@ const questions = [
     },
     {
         type: 'list',
-        message: 'What type of license does this application have?',
+        message: 'Select A Shape:',
         choices: ["Circle", "Triangle", "Square"],
         name: 'shape'
 
@@ -37,10 +31,10 @@ const questions = [
     }
 ];
 
+//Launches inquirer prompts to get user input and passes it to the makeLogo function
 function init() {
     inquirer
         .prompt(questions)
-        // .prompt(questions.text)
         .then((response) => {
             if (response.text.length > 3 || response.text.length < 0) {
                 throw new Error("Logo Text Must Be Between 1 and 3 Characters")
