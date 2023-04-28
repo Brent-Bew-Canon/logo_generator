@@ -1,6 +1,4 @@
 
-// THEN I am shown a 300x200 pixel image that matches the criteria I entered
-
 const shapes = require("./lib/shapes")
 const fs = require('fs');
 const inquirer = require('inquirer');
